@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Popular Movie DB</string>
+    <string name="MovieImageConent">Movie</string>
+    <string name="TitleStr">Title</string>
+    <string name="Overview">Overview</string>
+    <string name="userRating">User Rating</string>
+    <string name="ReleaseDate">Release Date</string>
+</resources>
