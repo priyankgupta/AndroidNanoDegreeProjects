@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/geometry2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:background="#ffffff">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:src="@drawable/androidbackground"
+                android:adjustViewBounds="true"
+                android:id="@+id/MovieimageNextPage"
+                android:contentDescription="@string/MovieImageConent" />
+        </RelativeLayout>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@android:drawable/btn_star"
+            android:id="@+id/FavouriteMovieButton"
+            android:layout_gravity="right"
+            android:checked="false" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/TitleStr"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/tMovieTitle"
+                android:textStyle="normal"
+                android:fontFamily="sans-serif-light"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Overview"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/tOverview"
+                android:textStyle="normal"
+                android:fontFamily="sans-serif-light"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/userRating"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/tUserRating"
+                android:textStyle="normal"
+                android:fontFamily="sans-serif-light"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ReleaseDate"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/tReleaseDate"
+                android:textStyle="normal"
+                android:fontFamily="sans-serif-light"/>
+
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="See User Reviews"
+            android:id="@+id/reviewbutton"
+            android:layout_gravity= "fill_horizontal"
+            android:gravity="center"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Watch Trailer On Youtube"
+            android:id="@+id/YoutubeTrailer"
+            android:layout_gravity= "fill_horizontal"
+            android:gravity="center"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"/>
+    </LinearLayout>
+</ScrollView>

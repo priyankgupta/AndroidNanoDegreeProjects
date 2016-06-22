@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activity.PopMovieMainPage">
+    <item android:id="@+id/MostPopular"
+        android:title="Most Popular"
+        app:showAsAction="never" />
+    <item android:id="@+id/MostVoted"
+        android:title="Most Voted"
+        app:showAsAction="never" />
+    <item android:id="@+id/Favourite_Movies"
+        android:title="Favourite Movies"
+        app:showAsAction="never" />
+    <item android:id="@+id/Aboutus"
+        android:title="About us"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+</menu>

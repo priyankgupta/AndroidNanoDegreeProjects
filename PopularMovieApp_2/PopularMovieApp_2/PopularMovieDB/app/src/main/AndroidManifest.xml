@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.p14gupta.popularmoviedb">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/movielauchericon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+       <activity
+            android:name=".Activity.StartPage"
+            android:theme="@style/HiddenTitleTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Activity.PopMovieMainPage">
+            <intent-filter>
+                <action android:name="com.example.p14gupta.popularmoviedb.POPMOVIESMAINPAGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Activity.PopMoviesNextPage">
+            <intent-filter>
+                <action android:name="com.example.p14gupta.popularmoviedb.POPMOVIESNEXTPAGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Activity.SeeUserReviews">
+            <intent-filter>
+                <action android:name="com.example.p14gupta.popularmoviedb.SEEUSERREVIEWS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Content Provider -->
+        <provider
+            android:authorities="com.p14gupta.poplarMovies"
+            android:multiprocess="true"
+            android:name=".SqlLiteDB.MovieContentProvider"/>
+
+    </application>
+
+</manifest>
